@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+# aqui solo van a ir el redireccionamiento al index y 
 def index(request):
     return render(request, 'plataforma/index.html')
 
-def departamento_transito(request):
-    return render(request, 'departamento_de_transito/departamento_transito.html')
