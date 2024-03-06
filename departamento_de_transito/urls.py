@@ -19,9 +19,9 @@ from . import views
 
 urlpatterns = [
     path('', views.departamento_transito, name='index_transito'),
-    path('hora_licencia', views.hora_licencia, name='descripcion'),
-    path('login', views.login, name='login'),
-    path('formulario', views.formulario, name='formulario'),
-    path('salida', views.salida, name='salida'),
+    path('hora_licencia/', views.hora_licencia, name='descripcion'),
+    path('login/', views.login, name='login'),
+    path('formulario/', views.formulario, name='formulario'),
+    path('salida/', views.salida, name='salida'),
 
 ]
