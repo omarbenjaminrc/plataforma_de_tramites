@@ -15,3 +15,14 @@ def formulario(request):
 
 def salida(request):
     return render(request, 'departamento_de_transito/licencia_de_conducir/salida.html')
+
+# plataforma interna
+
+def login_interno(request):
+    return render(request, 'departamento_de_transito/plataforma_interna/login.html')
+
+def dashboard_interno(request):
+    return render(request, 'departamento_de_transito/plataforma_interna/dashboard.html')
+
+def tramite_interno(request):
+    return render(request, 'departamento_de_transito/plataforma_interna/tramite.html')

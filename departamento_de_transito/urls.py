@@ -27,6 +27,9 @@ urlpatterns = [
     path('salida/', views.salida, name='salida'),
 
     # vistas de operador
+    path('interno/login', views.login_interno, name='login_interno'),
+    path('interno/dashboard', views.dashboard_interno, name='dashboard_interno'),
+    path('interno/tramite', views.tramite_interno, name='tramite_interno'),
 
     
 

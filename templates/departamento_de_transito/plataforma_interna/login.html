@@ -1,0 +1,15 @@
+{% extends "bases/base_transito.html" %}
+{% load static %}
+{% block content %}
+<main class="container">
+    <h1 class="text-center m-4">Departamento de Transito</h1>
+    <div class="d-flex justify-content-center">
+        <img src="{% static 'img/login_clave_unica.png' %}" alt="Bootstrap" class="mx-auto d-block" >
+    </div>
+    
+    <div class="d-grid gap-2 col-6 mx-auto m-5">
+        <a href="dashboard" class="btn btn-primary"> ingreso </a>
+    </div>
+</main>
+    
+{% endblock %}

@@ -1,0 +1,133 @@
+{% extends "bases/base_transito.html" %}
+
+{% load static %}
+
+{% block content %}
+    <table class="table caption-top container table-bordered ">
+        <caption>Calendario</caption>
+        <thead>
+        <tr>
+            <th class="col-1">Horas</th>
+            <th class="col-2 text-center">26 - 04</th>
+            <th class="col-2 text-center">3 - 05</th>
+            <th class="col-2 text-center">10 - 05</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>8:30 - 9:30</th>
+            <td>
+                <button type="button" class="btn btn-outline-secondary col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ana Maria Troncoso Castillo
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="text-center">Datos</h3>
+                                <button type="button" class="btn-close col-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <div class="col-md-8">
+                                <table class="mx-auto p-2">
+                                    <tr>
+                                        <td>Tramite</td>
+                                        <td>Renovacion</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nombres</td>
+                                        <td>Ana Maria</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apellidos</td>
+                                        <td>Paredes Morales</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RUT</td>
+                                        <td>1164862-k</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estado civil</td>
+                                        <td>Casada</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nivel de estudios</td>
+                                        <td>Superior</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nacionalidad</td>
+                                        <td>Chilena</td>
+                                    </tr>
+                                    <tr>
+                                        <td>País</td>
+                                        <td>Chile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Región</td>
+                                        <td>La Araucania</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ciudad</td>
+                                        <td>Purén</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dirección</td>
+                                        <td>Los Trigales 659</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carnet</td>
+                                        <td><a href="{% static 'img/Carnet_de_ejemplo.pdf' %}" target="_blank"><button type="button" class="btn btn-outline-primary col-12">Ver archivo</button></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hoja de vida de conductor</td>
+                                        <td><a href="{% static 'img/Certificado_de_hoja_de_vida_de_conductor ejemplo.pdf' %}" target="_blank"><button type="button" class="btn btn-outline-primary col-12">Ver archivo</button></a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger col-12">Eliminar Reserva</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td> Disponible </td>
+            <td> Disponible </td>
+        </tr>
+        <tr>
+            <th>9:30 - 10:30</th>
+            <td> Disponible </td>
+            <td> Disponible </td>
+            <td> Disponible </td>
+        </tr>
+        <tr>
+            <th>10:30 - 11:30</th>
+            <td> Disponible </td>
+            <td> Disponible </td>
+            <td> Disponible </td>
+        </tr>
+        <tr>
+            <th>11:30 - 12:30</th>
+            <td> Disponible </td>
+            <td> Disponible </td>
+            <td> Disponible </td>
+        </tr>
+        <tr>
+            <th>12:30 - 1:30</th>
+            <td> Disponible </td>
+            <td> Disponible </td>
+            <td> Disponible </td>
+        </tr>
+        <tr>
+            <th>1:30 - 2:00</th>
+            <td> Disponible </td>
+            <td> Disponible </td>
+            <td> Disponible </td>
+        </tr>
+        </tbody>
+    </table>
+
+{% endblock%}
