@@ -1,9 +1,110 @@
-{% extends "bases/base.html" %}
+{% extends "bases/base_transito.html" %}
 {% load static %}
 {% block content %}
 
-<h1>formulario</h1>
+<div class="container">
+    <h1 class="text-center">Formulario</h1>
+    <form class="row g-3">
+        
+        <!-- <div class=" form-group col-12 mt-4">
+            <label class="control-label"> ¿Quiere obtener una licencia nueva o una renovacion? </label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck"> Nueva licencia </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck"> Renovacion de licencia </label>
+            </div>
+        </div> -->
+        <div class="col-6">
+            <label for="inputNombres" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="inputNombres" placeholder="Ana Maria">
+        </div>
+        <div class="col-6">
+            <label for="inputApellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="inputApellidos" placeholder="Paredes Morales">
+        </div>
+        <div class="col-12">
+            <label for="inputRut" class="form-label">Rut</label>
+            <input type="text" class="form-control" id="inputRut" placeholder="sin puntos y con guión">
+        </div>
+        <div class="col-md-6">
+            <label for="inputEstadoCivil" class="form-label">Estado Civil</label>
+            <select id="inputEstadoCivil" class="form-select">
+                <option selected>seleccione</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputEstudios" class="form-label">Nivel de Estudios</label>
+            <select id="inputEstudios" class="form-select">
+                <option selected>seleccione</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="inputNacionalidad" class="form-label">Nacionalidad</label>
+            <select id="inputNacionalidad" class="form-select">
+                <option selected>seleccione</option>
+                <option>...</option>
+            </select>
+        </div>
+        
+        <div class="col-md-3">
+            <label for="inputPais" class="form-label">Pais</label>
+            <select id="inputPais" class="form-select">
+                <option selected>seleccione</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="inputRegion" class="form-label">Region</label>
+            <select id="inputRegion" class="form-select">
+                <option selected>seleccione</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="inputCiudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="inputCiudad">
+        </div>
+        <div class="col-12">
+            <label for="inputDireccion" class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="inputDireccion" placeholder="calle y numero de vivienda">
+        </div>
+        
+        <div class="mb-3 col-6">
+            <label for="inputCarnet" class="form-label">Ingrese una fotocopia de su Carnet por ambos lados</label>
+            <input class="form-control" type="file" id="inputCarnet">
+        </div>
+        <div class="mb-3 col-6">
+            <label for="inputCertificadoConductor" class="form-label"> Ingrese su Certificado de Hoja de vida de Conductor</label>
+            <input class="form-control" type="file" id="inputCertificadoConductor">
+        </div>
+        <div class="col-6">
+            <label for="inputFecha" class="form-label">fechas disponibles</label>
+            <input type="date" class="form-control" id="inputFecha">
+        </div>
+        <div class="col-md-6">
+            <label for="inputHora" class="form-label">Horas disponibles</label>
+            <select id="inputHora" class="form-select">
+                <option selected>seleccione</option>
+                <option>...</option>
+            </select>
+        </div>
+        
+        
+        <!-- <div class="col-12 text-center m-5">
+            <button type="submit" class="btn btn-primary text-center col-1">Agendar</button>
+        </div> -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="/transito/salida/" class="btn btn-primary"> Enviar Formulario </a>
+        </div>
+    </form>
+</div>
 
-<a href="/transito/salida/" > salida </a>
+
+
     
 {% endblock %}

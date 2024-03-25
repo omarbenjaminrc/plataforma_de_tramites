@@ -1,8 +1,41 @@
-{% extends "bases/base.html" %}
+{% extends "bases/base_transito.html" %}
 {% load static %}
 {% block content %}
-<h1>descripcion</h1>
+<main class="container"> 
+    <div class="row">
+        <div class="col-10 ">
 
-<a href="/transito/login/" > login </a>
+            <h1>Reseva de Horas Licencia de Coducir</h1>
+            <h2>Descripcion</h2>
+            <p>Los trámites de Licencias de conducir se realizarán sólo a través del sitio web Agendamiento de horas:</p>
+            <ul>
+                <li>RENOVACIONES</li>
+                <li>AMPLIACIÓN DE CLASES</li>
+                <li>PRIMERAS LICENCIAS</li>
+                <li>DUPLICADOS y CAMBIOS DE DOMICILIO OTORGADOS POR OTRAS COMUNAS</li>
+            </ul>
+            
+            <p>
+                La atención para solicitudes de DUPLICADOS, CAMBIOS DE DOMICILIO, CAMBIO DE NOMBRE/APELLIDO y REEMPLAZO DE LICENCIA POR DETERIORO SÓLO OTORGADOS POR LA COMUNA DE TEMUCO, es en forma presencial, desde las 8:30 a 12:00. Sin necesidad de realizar agendamiento por sitio web (Ver REQUISITOS DE ACUERDO A TRÁMITE A REALIZAR).
+            </p>
+            <p>
+                Para todo trámite, es obligatorio completar la “Declaración de Estado de Salud” (Resolución 1194, 16 de junio de 2020 del Ministerio Transporte y Telecomunicaciones). Si usted padece alguna enfermedad que requiera algún tratamiento médico y/o controles periódicos, debe presentar el día de la citación un certificado o informe emitido por su médico tratante que indique el estado actual de su salud. Sin perjuicio de ello, el médico jefe del gabinete psicosensomético puede solicitar información adicional para mejor resolver el otorgamiento de su licencia de conducir
+            </p>
+            <p>
+                El día y en el horario del agendamiento debe presentar CÉDULA VIGENTE y licencia de conducir.
+                
+                Si usted utiliza lentes para leer y/o conducir se sugiere que los porte el día del examen.
+                
+                El horario de citación a exámenes es referencial sujeto a aforos e imprevistos. El Depto. Licencias de Conducir se reserva el derecho de limitar las atenciones y/o modificar con antelación fechas u horarios su reserva de hora en caso de eventualidades que impidan un normal desarrollo de los procesos.
+            </p>
+        </div>
+    </div>
+
+ 
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="/transito/login/" class="btn btn-primary"> Ingrese al tramite </a>
+    </div>
+    
+</main>
     
 {% endblock %}

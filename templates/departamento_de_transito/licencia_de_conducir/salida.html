@@ -1,8 +1,17 @@
-{% extends "bases/base.html" %}
+{% extends "bases/base_transito.html" %}
 {% load static %}
 {% block content %}
+<div class="container">
 
-<h1>salida de la aplicacion</h1>
+    <!-- <h1>salida de la aplicacion</h1> -->
+    
+    <h1 class="text-md-center mt-5"> Su cita a sido agendada de manera correcta </h1>
+    <h3 class="text-md-center m-5"> Recuerde que su cita es el: _____ de ______ a las _________</h3>
+    
+    
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="/" class="btn btn-primary"> Volver al menu de tramites  </a>
+    </div>
+</div>
 
-<a href="/" > index </a>
 {% endblock %}

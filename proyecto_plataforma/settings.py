@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'plataforma',
+    'departamento_de_transito',
 ]
 
 MIDDLEWARE = [
